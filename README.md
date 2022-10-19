@@ -23,7 +23,7 @@ Check Heroku deployed APi using `python check_heroku_api.py`
 
 * [live_post.png](screenshots/live_post.png)
 
-* [slice_output.txt](files/slice_output.txt)
+* [slice_output.txt](model/slice_performance_analysis.txt)
 
 # Instructions:
 ## Environment Set up
