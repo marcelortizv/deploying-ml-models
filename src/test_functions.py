@@ -21,8 +21,8 @@ def test_process_data(data):
     """
     Check if split have same number of rows for X and y
     """
-    encoder = load("data/model/encoder.joblib")
-    lb = load("data/model/lb.joblib")
+    encoder = load("model/encoder.joblib")
+    lb = load("model/lb.joblib")
 
     X_test, y_test, _, _ = functions.process_data(
         data,
@@ -36,8 +36,8 @@ def test_process_encoder(data):
     """
     Check if encoder get the same params
     """
-    encoder_test = load("data/model/encoder.joblib")
-    lb_test = load("data/model/lb.joblib")
+    encoder_test = load("model/encoder.joblib")
+    lb_test = load("model/lb.joblib")
 
     _, _, encoder, lb = functions.process_data(
         data,
