@@ -24,6 +24,6 @@ def train_test_model():
 
     model = functions.train_model(X_train, y_train)
 
-    dump(model, "data/model/model.joblib")
-    dump(encoder, "data/model/encoder.joblib")
-    dump(lb, "data/model/lb.joblib")
+    dump(model, "model/model.joblib")
+    dump(encoder, "model/encoder.joblib")
+    dump(lb, "model/lb.joblib")

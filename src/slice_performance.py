@@ -49,6 +49,6 @@ def check_score_slices():
             logging.info(line)
             slice_values.append(line)
 
-    with open('data/model/slice_performance_analysis.txt', 'w') as out:
+    with open('model/slice_performance_analysis.txt', 'w') as out:
         for slice_value in slice_values:
             out.write(slice_value + '\n')
