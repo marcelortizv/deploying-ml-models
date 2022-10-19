@@ -3,7 +3,7 @@ This script run test for heroku deployment
 """
 import requests
 
-APP_URL = 'https://ml-heroku-fastapi.herokuapp.com/'
+APP_URL = 'https://ml-heroku-udacity-project.herokuapp.com/'
 
 data = {
     "age": 32,
