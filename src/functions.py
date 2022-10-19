@@ -38,7 +38,8 @@ def process_data(
 ):
     """ Process the data used in the machine learning pipeline.
     Processes the data using one hot encoding for the categorical features
-    and a label binarizer for the labels. This can be used in either training or
+    and a label binarizer for the labels.
+    This can be used in either training or
     inference/validation.
     Args:
 
