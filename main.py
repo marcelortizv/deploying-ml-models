@@ -64,9 +64,9 @@ async def get_items():
 
 @app.post("/")
 async def inference(user_data: User):
-    model = load("data/model/model.joblib")
-    encoder = load("data/model/encoder.joblib")
-    lb = load("data/model/lb.joblib")
+    model = load("model/model.joblib")
+    encoder = load("model/encoder.joblib")
+    lb = load("model/lb.joblib")
 
     print(encoder)
 
