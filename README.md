@@ -1,6 +1,32 @@
-Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
+# Run entire pipeline
 
-# Environment Set up
+To run the entire pipeline in sequence, use `python main.py --action all` or `python main.py`
+
+# Serve the API on local
+
+If testing FastAPi serving on local is needed, execute `uvicorn api_server:app --reload`
+
+# Check Heroku deployed API
+
+Check Heroku deployed APi using `python check_heroku_api.py`
+
+# Requested file by rubric
+* [Model Card](model_card.md)
+
+* [continuous_deployment.png](screenshots/continuous_deployment.png)
+
+* [continuous_integration.png](screenshots/continuous_integration.png)
+
+* [example.png](screenshots/example.png)
+
+* [live_get.png](screenshots/live_get.png)
+
+* [live_post.png](screenshots/live_post.png)
+
+* [slice_output.txt](files/slice_output.txt)
+
+# Instructions:
+## Environment Set up
 * Download and install conda if you don’t have it already.
     * Use the supplied requirements file to create a new environment, or
     * conda create -n [envname] "python=3.8" scikit-learn dvc pandas numpy pytest jupyter jupyterlab fastapi uvicorn -c conda-forge
