@@ -1,0 +1,6 @@
+[core]
+    remote = deploying-ml-models
+['remote "data"']
+    url = s3://marce-udacity-bucket
+['remote "deploying-ml-models"']
+    url = s3://marce-udacity-bucket
