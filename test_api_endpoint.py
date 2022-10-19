@@ -18,7 +18,7 @@ def client():
 def test_get(client):
     r = client.get("/")
     assert r.status_code == 200
-    assert r.json() == {"message": "Greetings!"}
+    assert r.json() == {"message": "Hello World!"}
 
 
 def test_get_malformed(client):
@@ -40,7 +40,7 @@ def test_post_above(client):
         "nativeCountry": "United-States"
     })
     assert r.status_code == 200
-    assert r.json() == {"prediction": ">50K"}
+    assert r.json() == {"Prediction": ">50K"}
 
 
 def test_post_below(client):
@@ -57,7 +57,7 @@ def test_post_below(client):
         "nativeCountry": "United-States"
     })
     assert r.status_code == 200
-    assert r.json() == {"prediction": "<=50K"}
+    assert r.json() == {"Prediction": "<=50K"}
 
 
 def test_post_malformed(client):
